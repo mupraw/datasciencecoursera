@@ -53,7 +53,7 @@ columnnames(dfNew) <- names
 ggplot(dfNew,aes(x = Time, y = spl, color = day)) +
 geom_line()+
 scale_x_datetime( labels = "%Y-%m-%d %H:%M:%S",
-                  breaks = "5 mins")
+                  breaks = "30 mins")
 
 
 

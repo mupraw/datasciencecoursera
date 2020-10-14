@@ -28,7 +28,7 @@ init <- "2018-08-01 08:00:00"
 init <- as.POSIXct(init, tz = "Europe/Tallinn")
 
 
-# -------------------------------------- Time Resolution -----------------------------------------------
+#-------------------------------------- Time Resolution -----------------------------------------------
 
 filterTime <- function(data,gap){
   min <- c(1,seq(gap,7200,gap)) #Selected data always starts from first second and stops in two hours (7200 seconds). Gap is in second

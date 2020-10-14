@@ -21,8 +21,8 @@ df <- df[!is.na(df$second),]   #remove column with NAs
 
 #-------------------------------------- Time conversion -------------------------------------------
 
-# Available time metric  is second, convert 'seconds' column to following time format "YYYY-mm-dd H:M:S".
-# Measurement started at 08:00 and end at 12:00
+#Available time metric  is second, convert 'seconds' column to following time format "YYYY-mm-dd H:M:S".
+#Measurement started at 08:00 and end at 12:00
 
 init <- "2018-08-01 08:00:00"
 init <- as.POSIXct(init, tz = "Europe/Tallinn")
@@ -47,9 +47,9 @@ df[,1] <- df[,1] + init      #Set time from second to format "YYYY-mm-dd H:M:S"
 
 #-------------------------------------- Plot SPL vs Time ---------------------------------------------
 
-# Daily comparison of SPL should be visible in the figure. Even dealing with relatively small number of columns, automatic line grouping when plotting is preffered 
-# rather than do it manually.
-# Available data frame should be tailored to accomodate the purpose
+#Daily comparison of SPL should be visible in the figure. Even dealing with relatively small number of columns, automatic line grouping when plotting is preffered 
+#rather than do it manually.
+#Available data frame should be tailored to accomodate the purpose
 
 day <- c("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday")
 
